@@ -37,8 +37,6 @@
 
 	// Add the Azure and Gemini volumes to the container to keep credentials persistent.
 	"mounts": [
-		"source=azure,target=/home/node/.azure,type=volume",
-		"source=gemini,target=/home/node/.gemini,type=volume",
-		"source=gemini-cache,target=/home/node/.cache/google-vscode-extension,type=volume"
+		"source=azure,target=/home/node/.azure,type=volume"
 	]
 }
