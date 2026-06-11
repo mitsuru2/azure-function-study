@@ -14,6 +14,10 @@ FROM node:24-bookworm
 RUN apt-get update && apt-get install -y \
     git \
     sudo \
+    python3 \
+    python3-pip \
+    python3-venv \
+    python-is-python3 \
     && rm -rf /var/lib/apt/lists/*
 
 # Enable sudo command to user 'node' w/o password.
